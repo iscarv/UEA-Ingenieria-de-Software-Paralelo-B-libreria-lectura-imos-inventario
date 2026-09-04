@@ -22,7 +22,7 @@ Se utilizará un flujo de trabajo basado en **GitHub Flow**:
 
 * **`main`**: contiene la versión estable del proyecto.
 * **`feature/...`**: ramas utilizadas para desarrollar cambios o funcionalidades específicas.
-* Cada cambio se desarrolla en una rama `feature/...`, se realiza un commit y posteriormente se crea un **Pull Request** para revisar y fusionar los cambios hacia `main`.
+* Cada cambio se desarrolla en una rama `feature/registrar-libro`, se realiza un commit y posteriormente se crea un **Pull Request** para revisar y fusionar los cambios hacia `main`.
 
 ## Estructura inicial
 
