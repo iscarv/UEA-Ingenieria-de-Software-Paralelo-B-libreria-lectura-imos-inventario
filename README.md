@@ -36,3 +36,6 @@ lectura-imos-inventario/
     └── workflows/
         └── ci.yml
 ```
+## Desarrollo
+
+Actualmente se está trabajando en la funcionalidad de registro de libros del módulo Gestión de Inventario.
