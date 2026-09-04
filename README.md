@@ -31,6 +31,7 @@ lectura-imos-inventario/
 ├── README.md
 ├── .gitignore
 ├── src/
+    └──.gitkeep
 └── .github/
     └── workflows/
         └── ci.yml
