@@ -5,8 +5,11 @@
 ## Información del proyecto
 
 **Sistema:** Librería Lectura IMOS
+
 **Módulo:** Gestión de Inventario
+
 **Stack tecnológico:** Python + Django
+
 **Integrante:** Isca Madaí Ortiz Sabando
 
 ## Descripción
