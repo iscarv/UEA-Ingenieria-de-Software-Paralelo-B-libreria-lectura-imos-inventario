@@ -12,6 +12,10 @@
 
 **Integrante:** Isca Madaí Ortiz Sabando
 
+**Asignatura:** Ingeniería de Software
+
+**Docente:** Ing. Hermes Darío Sánchez Bermeo, Mg.
+
 ## Descripción
 
 El proyecto corresponde al desarrollo de un sistema de gestión para la Librería Lectura IMOS. El módulo seleccionado para la implementación es **Gestión de Inventario**, el cual permitirá registrar, consultar y actualizar los libros del inventario, validar los campos obligatorios y buscar libros por título, autor o categoría.
