@@ -36,3 +36,34 @@ lectura-imos-inventario/
     └── workflows/
         └── ci.yml
 ```
+
+## Estructura actual
+``` text
+lectura-imos-inventario/
+├── README.md
+├── .gitignore
+├── pytest.ini
+├── requirements.txt
+├── src/
+│   ├── manage.py
+│   ├── config/
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── asgi.py
+│   │   └── wsgi.py
+│   ├── inventario/
+│   │   └── libros.py
+│   └── inventario_app/
+│       ├── migrations/
+│       │   └── 0001_initial.py
+│       ├── admin.py
+│       ├── apps.py
+│       ├── models.py
+│       ├── tests.py
+│       └── views.py
+├── tests/
+│   └── test_libros.py
+└── .github/
+    └── workflows/
+        └── ci.yml
+```
