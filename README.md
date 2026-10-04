@@ -74,5 +74,4 @@ lectura-imos-inventario/
 
 ## Desarrollo del módulo
 
-Se está trabajando en la funcionalidad de registro de libros correspondiente al RF-01 del módulo Gestión de Inventario.
->>>>>>> feature/registrar-libro
+Se completó el desarrollo del módulo de Gestión de Inventario, implementando las funcionalidades correspondientes a los requerimientos RF-01, RF-02, RF-03, RF-04 y RF-10.
