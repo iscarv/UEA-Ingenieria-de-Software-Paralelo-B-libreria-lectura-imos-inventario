@@ -1,0 +1,55 @@
+{% extends 'inventario/base.html' %}
+
+{% block title %}
+    {{ titulo_pagina }}
+{% endblock %}
+
+{% block content %}
+
+<h2>{{ titulo_pagina }}</h2>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    {% if form.non_field_errors %}
+        <div class="error">
+            {{ form.non_field_errors }}
+        </div>
+    {% endif %}
+
+    {% for field in form %}
+
+        <div>
+
+            {{ field.label_tag }}
+
+            {{ field }}
+
+            {% if field.errors %}
+                <div class="error">
+                    {{ field.errors }}
+                </div>
+            {% endif %}
+
+        </div>
+
+    {% endfor %}
+
+    <button
+        type="submit"
+        class="boton"
+    >
+        Guardar
+    </button>
+
+    <a
+        href="{% url 'lista_libros' %}"
+        class="boton boton-secundario"
+    >
+        Cancelar
+    </a>
+
+</form>
+
+{% endblock %}

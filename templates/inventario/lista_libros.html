@@ -1,0 +1,104 @@
+{% extends 'inventario/base.html' %}
+
+{% block title %}
+    Inventario de libros
+{% endblock %}
+
+{% block content %}
+
+<h2>Inventario de libros</h2>
+
+<div class="acciones">
+    <a
+        href="{% url 'registrar_libro' %}"
+        class="boton"
+    >
+        Registrar nuevo libro
+    </a>
+</div>
+
+<form method="get">
+
+    <label for="q">
+        Buscar libro
+    </label>
+
+    <input
+        type="text"
+        id="q"
+        name="q"
+        value="{{ termino }}"
+        placeholder="Buscar por título, autor o categoría"
+    >
+
+    <button
+        type="submit"
+        class="boton"
+    >
+        Buscar
+    </button>
+
+    {% if termino %}
+        <a
+            href="{% url 'lista_libros' %}"
+            class="boton boton-secundario"
+        >
+            Limpiar búsqueda
+        </a>
+    {% endif %}
+
+</form>
+
+{% if libros %}
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for libro in libros %}
+
+        <tr>
+            <td>{{ libro.codigo }}</td>
+            <td>{{ libro.titulo }}</td>
+            <td>{{ libro.autor }}</td>
+            <td>{{ libro.categoria }}</td>
+            <td>${{ libro.precio }}</td>
+            <td>{{ libro.stock }}</td>
+
+            <td>
+                <a
+                    href="{% url 'editar_libro' libro.id %}"
+                    class="boton"
+                >
+                    Editar
+                </a>
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% else %}
+
+<p>
+    No se encontraron libros.
+</p>
+
+{% endif %}
+
+{% endblock %}

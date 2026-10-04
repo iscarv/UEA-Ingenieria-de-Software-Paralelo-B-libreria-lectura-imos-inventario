@@ -1,0 +1,36 @@
+{% extends 'inventario/base.html' %}
+
+{% block title %}
+    Eliminar libro
+{% endblock %}
+
+{% block content %}
+
+<h2>Eliminar libro</h2>
+
+<p>
+    ¿Está seguro de eliminar el libro
+    <strong>{{ libro.titulo }}</strong>?
+</p>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    <button
+        type="submit"
+        class="boton"
+    >
+        Confirmar eliminación
+    </button>
+
+    <a
+        href="{% url 'lista_libros' %}"
+        class="boton boton-secundario"
+    >
+        Cancelar
+    </a>
+
+</form>
+
+{% endblock %}
