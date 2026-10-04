@@ -40,6 +40,7 @@ lectura-imos-inventario/
     └── workflows/
         └── ci.yml
 ```
+<<<<<<< HEAD
 
 ## Estructura actual
 ``` text
@@ -71,3 +72,8 @@ lectura-imos-inventario/
     └── workflows/
         └── ci.yml
 ```
+=======
+## Desarrollo del módulo
+
+Se está trabajando en la funcionalidad de registro de libros correspondiente al RF-01 del módulo Gestión de Inventario.
+>>>>>>> feature/registrar-libro
