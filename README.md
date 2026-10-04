@@ -39,8 +39,7 @@ lectura-imos-inventario/
 └── .github/
     └── workflows/
         └── ci.yml
-```
-<<<<<<< HEAD
+
 
 ## Estructura actual
 ``` text
